@@ -13,15 +13,15 @@
         <h1>Video Lectures</h1>
         <div id="video_player">
             <video controls poster="" class="video" id="video">
-                <source src="./media/zoom.mp4" type="video/mp4">
-                <source src="./media/zoom.mp4" type="video/mp4">
+                <source src="zoom.mp4" type="video/mp4">
+                <source src="zoom.mp4" type="video/mp4">
             </video>
             <div class="scrollBox">
                 <div class="box">
-                    <img src="./img/1.png">
+                    <img src="1.png">
                     <div class="box-content">
                         <h3>How to create a video Gallery using Html and CSS3</h3>
-                        <a href="./media/zoom.mp4" class="btn">Watch</a>
+                        <a href="zoom.mp4" class="btn">Watch</a>
                     </div>
                 </div>
                 <!-- <div class="box">
@@ -82,7 +82,7 @@
             video.removeAttribute("poster");
             let source = document.querySelectorAll("#video_player video source");
             source[0].src = filename + ".mp4";
-            source[1].src = filename + ".m4v";
+            source[1].src = filename + ".mp4";
             video.load();
             video.play();
         }
